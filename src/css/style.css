@@ -1,0 +1,86 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    padding: 60px;
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho" "ilustracao info" "rodape rodape";
+}
+
+.container .cabecalho {
+    grid-area: cabecalho;
+}
+
+.container .cabecalho img {
+    width: 200px;
+}
+
+.container .ilustracao {
+    grid-area: ilustracao;
+    padding-top: 35px;
+    padding-right: 40px;
+}
+
+.container .ilustracao img {
+    width: 48vw;
+}
+
+.container .info {
+    grid-area: info;
+    margin-top: 65px;
+}
+
+.container .info h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;    
+}
+
+.container .info p {
+    color: #fff;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    font-size: 15.5px;
+}
+
+.container .info .botao {
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+}
+
+.container .info .botao:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.container .rodape {
+    grid-column-start: 2;
+    text-align: right;
+}
+.container .rodape a {
+    padding-right: 10px;
+}
+
+.container .rodape a i {
+    padding: 10px;
+    color:#fff;
+    border: 1.5px solid;
+    border-radius: 50%;
+    border-color: #fff;
+    font-size: 14px;
+}
+
+.container .rodape a i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
