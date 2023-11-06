@@ -38,10 +38,15 @@
         padding: 10px 80px;
     }
 
+    .container .info .botao:hover {
+        padding: 15px 85px;
+        font-size: 18px;
+    }
+
     .container .rodape {
         display: flex;
         justify-content: center;
-        padding-top: 90px;
+        padding-top: 50px;
     }
 
 }

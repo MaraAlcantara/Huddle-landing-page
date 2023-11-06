@@ -3,12 +3,11 @@ body {
     background-image: url(../images/bg-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    
 }
 
 .container {
     padding: 60px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-areas: "cabecalho cabecalho" "ilustracao info" "rodape rodape";
 }
@@ -48,6 +47,7 @@ body {
     margin-top: 20px;
     padding-bottom: 40px;
     font-size: 15.5px;
+    
 }
 
 .container .info .botao {
@@ -56,28 +56,43 @@ body {
     border-radius: 20px;
     color: hsl(257, 40%, 49%);
     font-size: 15px;
+    transition: 0.5s;
 }
 
 .container .info .botao:hover {
     color: #fff;
     background-color: hsl(300, 69%, 71%);
+    padding: 15px 55px;
+    border-radius: 30px;
+    font-size: 16px;
+    
 }
 
 .container .rodape {
     grid-column-start: 2;
-    text-align: right;
-}
-.container .rodape a {
-    padding-right: 10px;
 }
 
-.container .rodape a i {
+.container .rodape nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+.container .rodape nav ul li{
     padding: 10px;
+}
+
+.container .rodape nav ul li a i {
     color:#fff;
     border: 1.5px solid;
     border-radius: 50%;
     border-color: #fff;
-    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
 }
 
 .container .rodape a i:hover {
